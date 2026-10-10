@@ -44,13 +44,3 @@ As máscaras ajudam a formatar CPF, telefone e CEP durante a digitação, e o na
 
 Recursos como processamento real de doações, newsletter conectada, área administrativa, emissão de certificados, relatórios para download e seleção persistente de voluntários não fazem parte deste protótipo e exigem serviços adicionais.
 
-## Publicar no GitHub Pages
-
-1. Crie um repositório público no GitHub e envie os arquivos desta pasta mantendo os caminhos.
-2. Em **Settings → Pages**, escolha a branch e a pasta raiz como origem.
-3. Acesse o endereço fornecido pelo GitHub Pages e verifique as três páginas em desktop e celular.
-4. Antes de divulgar, substitua os dados demonstrativos, configure domínio/HTTPS se necessário e conecte serviços reais de forma segura.
-
-## Validação HTML
-
-Valide cada página publicada ou o código copiado no [W3C Nu HTML Checker](https://validator.w3.org/nu/). Revise também a acessibilidade e contraste com testes automatizados e navegação manual por teclado/leitor de tela; a estrutura de um protótipo não representa, por si só, certificação WCAG 2.1 AA.
