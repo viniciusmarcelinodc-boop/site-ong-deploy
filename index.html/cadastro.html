@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cadastre seu interesse para participar das ações da Rede Semente como voluntário ou apoiador.">
+    <meta name="theme-color" content="#f7f6ef">
+    <meta property="og:title" content="Cadastro | Faça parte da Rede Semente">
+    <meta property="og:description" content="Conte um pouco sobre você e descubra como participar das iniciativas da Rede Semente.">
+    <title>Cadastro | Faça parte da Rede Semente</title>
+    <link rel="icon" href="assets/semente.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Rede Semente — início"><img src="assets/semente.svg" alt="" width="38" height="38"><span>rede<span class="brand-accent">semente</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal"><a class="nav-link" href="index.html">Início</a><a class="nav-link" href="projetos.html">Projetos</a><a class="nav-link" href="index.html#sobre">Quem somos</a><a class="nav-link" href="projetos.html#transparencia">Transparência</a><a class="button button-small active" href="cadastro.html" aria-current="page">Quero participar <span aria-hidden="true">↗</span></a></nav>
+      </div>
+    </header>
+    <main id="conteudo">
+      <section class="registration-hero container"><div><p class="eyebrow"><span class="eyebrow-dot"></span> Toda transformação começa com um sim</p><h1>Seu próximo passo<br>começa <span>aqui.</span></h1><p>Conte um pouco sobre você. Nossa equipe entra em contato para descobrir, junto com você, a melhor forma de participar.</p></div><img src="assets/comunidade.svg" width="440" height="360" fetchpriority="high" alt="Membros da comunidade cuidam de uma pequena planta juntos"></section>
+      <section class="registration-section">
+        <div class="container registration-layout">
+          <aside class="registration-aside"><p class="eyebrow">Faça parte da rede</p><h2>Um gesto seu<br>faz <span>diferença.</span></h2><p>Voluntarie-se, compartilhe um talento ou acompanhe as iniciativas. Vamos encontrar um jeito que combine com você.</p><div class="aside-detail"><span aria-hidden="true">01</span><div><strong>Você conta pra gente</strong><p>Preencha o cadastro com seus dados e interesses.</p></div></div><div class="aside-detail"><span aria-hidden="true">02</span><div><strong>A gente conversa</strong><p>Nossa equipe combina os próximos passos com você.</p></div></div><div class="aside-detail"><span aria-hidden="true">03</span><div><strong>Você entra em ação</strong><p>Conheça as oportunidades e escolha como participar.</p></div></div><div class="privacy-card"><span aria-hidden="true">♧</span><p><strong>Seus dados importam.</strong><br>Este protótipo não transmite nem armazena seus dados pessoais. A ONG deve definir sua política de privacidade e um serviço seguro antes do lançamento.</p></div></aside>
+          <form class="registration-form" id="registration-form" novalidate>
+            <div class="form-heading"><div><p class="eyebrow">Cadastro de interesse</p><h2>Vamos nos conhecer?</h2></div><span class="required-note">* Campos obrigatórios</span></div>
+            <fieldset class="form-group"><legend>01 <span>Sobre você</span></legend>
+              <div class="form-grid"><div class="form-field form-field-full"><label for="nome">Nome completo <span>*</span></label><input class="text-input" id="nome" name="nome" type="text" autocomplete="name" minlength="3" maxlength="120" placeholder="Como podemos chamar você?" required></div>
+                <div class="form-field"><label for="email">E-mail <span>*</span></label><input class="text-input" id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="voce@email.com" required></div>
+                <div class="form-field"><label for="cpf">CPF <span>*</span></label><input class="text-input" id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" aria-describedby="cpf-hint" required><small id="cpf-hint">Usado somente para identificação neste cadastro demonstrativo.</small></div>
+                <div class="form-field"><label for="telefone">Telefone / WhatsApp <span>*</span></label><input class="text-input" id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" required></div>
+                <div class="form-field"><label for="nascimento">Data de nascimento <span>*</span></label><input class="text-input" id="nascimento" name="nascimento" type="date" autocomplete="bday" required></div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group"><legend>02 <span>Onde encontrar você</span></legend>
+              <div class="form-grid"><div class="form-field form-field-full"><label for="endereco">Endereço <span>*</span></label><input class="text-input" id="endereco" name="endereco" type="text" autocomplete="street-address" minlength="5" maxlength="160" placeholder="Rua, avenida e número" required></div>
+                <div class="form-field"><label for="cep">CEP <span>*</span></label><input class="text-input" id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" required></div>
+                <div class="form-field"><label for="cidade">Cidade <span>*</span></label><input class="text-input" id="cidade" name="cidade" type="text" autocomplete="address-level2" maxlength="80" placeholder="Sua cidade" required></div>
+                <div class="form-field"><label for="estado">Estado <span>*</span></label><select class="text-input" id="estado" name="estado" autocomplete="address-level1" required><option value="">Selecione</option><option value="AC">Acre (AC)</option><option value="AL">Alagoas (AL)</option><option value="AP">Amapá (AP)</option><option value="AM">Amazonas (AM)</option><option value="BA">Bahia (BA)</option><option value="CE">Ceará (CE)</option><option value="DF">Distrito Federal (DF)</option><option value="ES">Espírito Santo (ES)</option><option value="GO">Goiás (GO)</option><option value="MA">Maranhão (MA)</option><option value="MT">Mato Grosso (MT)</option><option value="MS">Mato Grosso do Sul (MS)</option><option value="MG">Minas Gerais (MG)</option><option value="PA">Pará (PA)</option><option value="PB">Paraíba (PB)</option><option value="PR">Paraná (PR)</option><option value="PE">Pernambuco (PE)</option><option value="PI">Piauí (PI)</option><option value="RJ">Rio de Janeiro (RJ)</option><option value="RN">Rio Grande do Norte (RN)</option><option value="RS">Rio Grande do Sul (RS)</option><option value="RO">Rondônia (RO)</option><option value="RR">Roraima (RR)</option><option value="SC">Santa Catarina (SC)</option><option value="SP">São Paulo (SP)</option><option value="SE">Sergipe (SE)</option><option value="TO">Tocantins (TO)</option></select></div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group"><legend>03 <span>Como quer participar?</span></legend>
+              <div class="form-field"><label for="interesse">Tenho interesse em <span>*</span></label><select class="text-input" id="interesse" name="interesse" required><option value="">Escolha uma opção</option><option value="voluntariado">Ser voluntário(a)</option><option value="doacao">Apoiar com doações</option><option value="parceria">Propor uma parceria</option><option value="novidades">Receber novidades</option></select></div>
+              <div class="form-field form-field-spaced"><label for="mensagem">Conte um pouco sobre você <span class="optional-label">(opcional)</span></label><textarea class="text-input" id="mensagem" name="mensagem" rows="4" maxlength="500" placeholder="Se quiser, compartilhe seus interesses, experiências ou disponibilidade."></textarea></div>
+              <label class="checkbox-label"><input type="checkbox" name="consentimento" required><span>Concordo que a Rede Semente entre em contato sobre este cadastro. <span>*</span></span></label>
+            </fieldset>
+            <div class="form-submit"><button class="button" type="submit">Enviar cadastro <span aria-hidden="true">↗</span></button><p class="form-feedback" aria-live="polite"></p><small>Protótipo acadêmico: nenhum dado será enviado. Não informe seus dados reais.</small></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-light" href="index.html"><img src="assets/semente.svg" alt="" width="38" height="38"><span>rede<span class="brand-accent">semente</span></span></a><p>Juntos, cultivamos futuros.<br>Uma semente de cada vez.</p></div><div><h2 class="footer-title">Explore</h2><a href="projetos.html">Nossos projetos</a><a href="cadastro.html">Seja voluntário</a><a href="projetos.html#transparencia">Transparência</a></div><div><h2 class="footer-title">Fale com a gente</h2><a href="mailto:oi@redesemente.org.br">oi@redesemente.org.br</a><a href="tel:+551130304040">(11) 3030-4040</a><span>Rua das Acácias, 120 · São Paulo, SP</span></div><form class="newsletter-form" novalidate><label for="newsletter-email">Uma boa notícia por mês.</label><p>Receba histórias e novidades da rede.</p><div class="newsletter-field"><input id="newsletter-email" name="email" type="email" placeholder="Seu melhor e-mail" required autocomplete="email"><button type="submit" aria-label="Inscrever-se na newsletter">→</button></div><p class="form-feedback" aria-live="polite"></p></form></div><div class="container footer-bottom"><span>© <span data-year>2026</span> Rede Semente · CNPJ 12.345.678/0001-90 (demonstrativo)</span><span>Feito com cuidado e em comunidade.</span></div></footer>
+  </body>
+</html>
